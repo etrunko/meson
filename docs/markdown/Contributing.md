@@ -18,6 +18,25 @@ Github](https://github.com/mesonbuild/meson/pulls). This causes them
 to be run through the CI system. All submissions must pass a full CI
 test run before they are even considered for submission.
 
+## Acceptance and merging
+
+The kind of review and acceptance any merge proposal gets depends on
+the changes it contains.
+
+Documentation only changes can be accepted by any member of the
+development team who has merge rights on Github. It is also permitted
+to push doc-only fixes directly to master.
+
+The second kind of merges include refactorings that don't change any
+functionality, fixes to the CI system and bug fixes that have the
+necessary tests and don't change existing functionality. These require
+a review from someone from the development team. Once successfully
+reviewed anyone with merge rights can merge these to master.
+
+The final kind of merges are those that add new functionality or
+change existing functionality in a backwards incompatible way. These
+require the approval of the project lead.
+
 ## Tests
 
 All new features must come with automatic tests that thoroughly prove
